@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelVisual</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="MainContainer">
+<div class="Cal">
+    <h1><span style="font-size: 40px";>VelVisual </span>
+        <span style="font-size: 25px";> A velocity calculator</span></h1>
+    <p style="color: orange; font-family:'Lucida Sans';">Choose your methods:</p>
+
+    <button class="Methodbutton Distance" onclick="DistanceTime()">Distance based</button> 
+    <button class="Methodbutton AccTime" onclick="AccelerationTime()">Acceleration - Time</button> 
+
+<div id="distancebased">
+    <h2 style="color: orange; font-family: 'Segoe UI';">Distance Based</h2>
+    <label for="distance">Distance (m)</label>
+    <input type="number" id="distance"><br>
+
+    <label for="DisTime">Time (s)</label>
+    <input type="number" id="Distime"><br>
+
+    <button class="Calculatebutton" onclick="calculateDis()">Calculate Velocity</button><br>
+    <p id="resultDis" style="color: orange; font-family:'Lucida Sans';"></p>
+
+</div>
+
+<div id="accelerationTime" style="display: none;">
+    <h2 style="color: orange; font-family: 'Segoe UI';">Acceleration - Time</h2>
+    <label for="startvel">Starting velocity (m/s)</label>
+    <input type="number" id="startvel"><br>
+    <label for="acceleration">Acceleration (m/s²)</label>
+    <input type="number" id="acceleration"><br>
+    <label for="AccTime">Time (s)</label>
+    <input type="number" id="AccTime"><br>
+
+    <button class="Calculatebutton" onclick="calculateAcc()">Calculate Velocity</button><br>
+    <p id="resultAcc" Choose style="color: orange; font-family:'Lucida Sans';"></p>
+
+</div>
+
+</div>
+    <div class="GraphContainer">
+    <div class="Graph" id="VelGraph">
+
+    </div>
+    </div>
+</div>
+
+<script src="Main.js"></script>
+</body>
+</html>

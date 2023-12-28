@@ -1,0 +1,57 @@
+
+body {
+    background-color: #292929;
+}
+.MainContainer {
+    display: flex;
+}
+.Cal {
+    background-color: #151515;
+    width: 40%;
+    height: 625px;
+}
+h1 {
+    color:orange; 
+    border-bottom-style: solid;
+    border-width: 3px;
+    font-family:'Segoe UI';
+}
+.GraphContainer {
+    background-color:beige;
+    width: 60%;
+    height: 625px;
+}
+
+.Graph {
+    margin: 50px;
+}
+
+label {
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+input {
+    padding: 3px;
+    margin: 6px;
+}
+
+button {
+    background-color:darkgrey;
+    font-size: 16px;
+    padding: 3px;
+    margin: 6px;
+}
+
+.Methodbutton.active {
+    background-color: orange;
+}
+
+
+.Calculatebutton:active {
+    background-color: orange;
+}
+
+.result {
+    color: orange
+}
