@@ -18,6 +18,7 @@
 
     <button class="Methodbutton Distance" onclick="DistanceTime()">Distance based</button> 
     <button class="Methodbutton AccTime" onclick="AccelerationTime()">Acceleration - Time</button> 
+    <button class="Methodbutton AccDis" onclick="AccelerationDistance()">Acceleration - Distance</button>
 
 <div id="distancebased">
     <h2 style="color: orange; font-family: 'Segoe UI';">Distance Based</h2>
@@ -44,6 +45,19 @@
     <button class="Calculatebutton" onclick="calculateAcc()">Calculate Velocity</button><br>
     <p id="resultAcc" Choose style="color: orange; font-family:'Lucida Sans';"></p>
 
+</div>
+
+<div id="accelerationDistance" style="display: none;">
+    <h2 style="color: orange; font-family: 'Segoe UI';">Acceleration - Distance</h2>
+    <label for="startvelDis">Starting velocity (m/s)</label>
+    <input type="number" id="startvelDis"><br>
+    <label for="accelerationDis">Acceleration (m/s²)</label>
+    <input type="number" id="accelerationDis"><br>
+    <label for="AccDis">Distance (m)</label>
+    <input type="number" id="AccDis"><br>
+
+    <button class="Calculatebutton" onclick="calculateAccDis()">Calculate Velocity</button><br>
+    <p id="resultAccDis" Choose style="color: orange; font-family:'Lucida Sans';"></p>
 </div>
 
 </div>
